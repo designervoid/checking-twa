@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import WebApp from '@twa-dev/sdk';
+
+console.log(WebApp); // should not drop the app
 
 function App() {
   return (
