@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import WebApp from '@twa-dev/sdk';
+import React from 'react';
 
 console.log(WebApp); // should not drop the app
 
