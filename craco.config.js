@@ -10,11 +10,18 @@ module.exports = {
                     fullySpecified: false,
                   },
                 },
+                {
+                  test: /\.m?js$/,
+                  exclude: /node_modules\/@twa-dev/,
+                  enforce: 'pre',
+                  use: ['source-map-loader'],
+                },
             ],
         },
         resolve: {
             extensions: [".ts", ".tsx", ".js"],
         },
+        ignoreWarnings: [/Failed to parse source map/],
       },
     },
     devServer: {
